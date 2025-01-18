@@ -33,6 +33,7 @@ public class SensorParser {
             }
         } catch (Exception e) {
             log.error("Failed to parse sensor data: ", e);
+            throw new IllegalArgumentException("Failed to parse sensor data", e);
         }
 
         return sensorData;
