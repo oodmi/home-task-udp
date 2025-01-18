@@ -43,7 +43,7 @@ Submission Guidelines:
 
 To run the Notes Service API locally, follow these steps:
 
-```bash
+```shell
 # Clone the repository
 git clone https://github.com/oodmi/home-task-udp.git
 
@@ -62,4 +62,12 @@ java -jar ./central-service/build/libs/central-service-0.0.1-SNAPSHOT.jar
 # Run warehouse-service
 java -jar ./warehouse-service/build/libs/warehouse-service-0.0.1-SNAPSHOT.jar
 
+```
+
+```shell
+# Send Temperature measurements 
+echo "sensor_id=t1; value=30" | nc -u 127.0.0.1 3344
+
+# Send Humidity measurements 
+echo "sensor_id=h1; value=40" | nc -u 127.0.0.1 3355
 ```
