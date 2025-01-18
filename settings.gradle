@@ -1,0 +1,5 @@
+rootProject.name = 'home-task-udp'
+include 'warehouse-service'
+include 'central-service'
+include 'common-entities'
+
